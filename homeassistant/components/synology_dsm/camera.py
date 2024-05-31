@@ -179,7 +179,8 @@ class SynoDSMCamera(SynologyDSMBaseEntity[SynologyDSMCameraUpdateCoordinator], C
         if not self.available:
             return None
 
-        return self.camera_data.live_view.rtsp
+        """return self.camera_data.live_view.rtsp"""
+        return self.camera_data.live_view.mxpeg_http
 
     async def async_enable_motion_detection(self) -> None:
         """Enable motion detection in the camera."""
