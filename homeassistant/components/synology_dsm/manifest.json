@@ -8,6 +8,7 @@
   "iot_class": "local_polling",
   "loggers": ["synology_dsm"],
   "requirements": ["py-synologydsm-api==2.4.2"],
+  "version": "1.1.0",
   "ssdp": [
     {
       "manufacturer": "Synology",
